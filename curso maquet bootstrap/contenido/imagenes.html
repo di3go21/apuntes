@@ -1,53 +1,60 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Componente Dropdown</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-      .container{
-          background-color: lightcoral;
-          color: white;
-          height: 100px;
-          text-align: center;
-      }
-      .container-fluid{
-          background-color: lightcoral;
-          color: rgb(73, 11, 11);
-          height: 100px;
-          text-align: center;
-      }
-  </style>
-
+    <link rel="stylesheet" href="css.css">
 </head>
   <body>
 
     <div class="container">
-        <h1>Esto es un container</h1>
-    
+ 
+        
+    <!--EJEMPLO DE UNA IMAGEN RESPONSIVE-->
+    <h2>imagen sin clase</h2>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-3">
+            <img src="./img/bs.png" alt="imagen bs">
+        </div>
+        <div class="col-sm-9">
+            <h1>Imagen Responsiva</h1>
+        </div>
     </div>
-    <div class="container-fluid ">
-        <h1>Esto es un container</h1>
-    
+    <h2>ahora si!</h2>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-3">
+            <img src="./img/bs.png" class="img-fluid img-thumbnail" alt="imagen bs">
+        </div>
+        <div class="col-sm-9">
+            <h1>Imagen Responsiva</h1>
+        </div>
+    </div>
+    <hr class="hr-success">
+        
+    <!--Ahora una figura centrada usando el flex-->
+
+    <div class="row justify-content-center">
+        
+        <div class="col-sm-8 mt-5"></div>
+        <figure>
+            <img src="./img/bs.png" class="figure-img img-fluid " alt="">
+            <figcaption class="figure-caption text-center">
+                Fotofrafía realizada por mi
+            </figcaption>
+
+        </figure>
     </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+    </div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

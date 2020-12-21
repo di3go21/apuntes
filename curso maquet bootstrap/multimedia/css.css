@@ -1,0 +1,30 @@
+
+.red {
+    background-color: rgb(233, 64, 64);
+    height: 30px;
+}
+.green {
+    background-color: green;
+    height: 30px;
+}
+
+.blue {
+    background-color: rgb(43, 231, 231);
+    height: 30px;
+}
+
+.yellow {
+    background-color: rgb(235, 235, 79);
+    height: 30px;
+}
+.black {
+    background-color: black;
+    height: 30px;
+}
+
+.vertical{
+    height: 80px;
+}
+.grande{
+    height: auto;
+}

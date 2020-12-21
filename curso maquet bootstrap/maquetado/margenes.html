@@ -1,53 +1,40 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Componente Dropdown</title>
+    <title>Margenes</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-      .container{
-          background-color: lightcoral;
-          color: white;
-          height: 100px;
-          text-align: center;
-      }
-      .container-fluid{
-          background-color: lightcoral;
-          color: rgb(73, 11, 11);
-          height: 100px;
-          text-align: center;
-      }
-  </style>
-
+    <link rel="stylesheet" href="css.css">
+    <style>
+        div div{
+            border: 1px solid black;
+        }
+    </style>
 </head>
   <body>
 
     <div class="container">
-        <h1>Esto es un container</h1>
-    
+        <div class="row">
+            <div class="col-sm-4 yellow"></div>
+            <!-- Como se ve la sintaxis es m de margin, md breakpoint y mayores, valor -->
+            <div class="col-md-4 ml-md-5 blue"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 mt-md-5 ml-md-auto yellow"></div>
+            <div class="col-md-3 mt-md-5 mb-md-5 ml-md-auto blue"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2 yellow p-4 "></div>
+            <div class="col-md-2 blue p-4 "></div>
+        </div>
+      
     </div>
-    <div class="container-fluid ">
-        <h1>Esto es un container</h1>
-    
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
