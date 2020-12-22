@@ -12,16 +12,25 @@
   <body>
       <main class="container-fluid">
 
-        <head class="row">
+        <div class="alert alert-dismissible fade show alert-warning fixed-bottom">
+            Aviso de Cookies: ¿Te has enterado?
+            <button type="button" class="close" data-dismiss="alert">X</button>
+        </div>
 
+        
+
+
+        <header class="row">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
                 <a href="#" class="navbar-brand">
                     <img src="./../deNavegacion/img/bs.png" style="height: 35px;" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                 data-target="#menu" >
-                    <span class="navbar-toggle-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+
+                
 
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav">
@@ -50,21 +59,75 @@
                             </div>
                         </li>
                     </ul>
-                    <form class="form-inline">
-                    </form>
+                    
                 </div>
+                <form class="form-inline ">
+                    <input type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#entrar" value="Log In">
+                    <input type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#registro" value="Registrarse">
+              
+                 </form>
             </nav>
-        </head>
+        </header>
+
+        <section class="row bg-dark justify-content-center mt-3 mb-3">
+            <h1 class="text-center text-white">Cursos ofertados</h1>
+        </section>
+
+        <section class="row bg-dark justify-content-center mt-3 mb-3">
+            <h1 class="text-center text-white">¿Quiéres hablar con nostros?</h1>
+        </section>
+
+        <section class="modal" id="entrar">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <div class="modal-title">
+                            Iniciar Sesión
+                        </div>
+                        <span data-dismiss="modal">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success">Enviar</button>
+                    </div>
 
 
 
+                </div>
+
+            </div>
+        </section>
+
+        <section class="modal" id="registro">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <div class="modal-title">
+                            Registro Usuario
+                        </div>
+                        <span data-dismiss="modal">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
-
-
-
-
+        <footer class="row bg-dark justify-content-center mt-3 mb-3">
+            <h1 class="text-center text-white">EASY DAW &copy;</h1>
+        </footer>
 
 
       </main>
